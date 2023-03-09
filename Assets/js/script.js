@@ -1,3 +1,4 @@
+//store question text, options and answers in an array
 const questions = [
     {
       questionText: "How do we write a comment in javascript?",
@@ -37,37 +38,38 @@ const questions = [
       options: ["1. alertBox('Hello World!');", "2. alert('Hello World!');", "3. alert(Text:'Hello World!');", "4. Both 1. and 2."],
       answer: "2. alert('Hello World!');",
     },
-];
-
-const startCard = document.querySelector("#start-card");
-const questionCard = document.querySelector("#question-card");
-const scoreCard = document.querySelector("#score-card");
-const leaderboardCard = document.querySelector("#leaderboard-card");
-
-function hideCards() {
+  ];
+  
+  //select each card div by id and assign to variables
+  const startCard = document.querySelector("#start-card");
+  const questionCard = document.querySelector("#question-card");
+  const scoreCard = document.querySelector("#score-card");
+  const leaderboardCard = document.querySelector("#leaderboard-card");
+  
+  //hide all cards
+  function hideCards() {
     startCard.setAttribute("hidden", true);
     questionCard.setAttribute("hidden", true);
     scoreCard.setAttribute("hidden", true);
     leaderboardCard.setAttribute("hidden", true);
-}
-
-const resultDiv = document.querySelector("#result-div");
-const resultText = document.querySelector("#result-text");
-
-
-function hideResultText() {
-  resultDiv.style.display = "none";
-}
-
-
-var intervalID;
-var time;
-var currentQuestion;
-
-document.querySelector("#start-button").addEventListener("click", startQuiz);
-
-
-function startQuiz() {
+  }
+  
+  const resultDiv = document.querySelector("#result-div");
+  const resultText = document.querySelector("#result-text");
+  
+  
+  function hideResultText() {
+    resultDiv.style.display = "none";
+  }
+  
+  
+  var intervalID;
+  var time;
+  var currentQuestion;
+  
+  document.querySelector("#start-button").addEventListener("click", startQuiz);
+  
+  function startQuiz() {
     //hide any visible cards, show the question card
     hideCards();
     questionCard.removeAttribute("hidden");
