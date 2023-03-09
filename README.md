@@ -28,8 +28,8 @@ THEN I can save my initials and my score
 
 The following images demonstrates the application functionality:
 
-![img1](./assets/images/1.png)
-![img2](./assets/images/2.png)
-![img3](./assets/images/3.png)
-![img4](./assets/images/4.png)
+![img1](./Assets/images/1.png)
+![img2](./Assets/images/2.png)
+![img3](./Assets/images/3.png)
+![img4](./Assets/images/4.png)
 
