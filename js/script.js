@@ -43,3 +43,10 @@ const startCard = document.querySelector("#start-card");
 const questionCard = document.querySelector("#question-card");
 const scoreCard = document.querySelector("#score-card");
 const leaderboardCard = document.querySelector("#leaderboard-card");
+
+function hideCards() {
+    startCard.setAttribute("hidden", true);
+    questionCard.setAttribute("hidden", true);
+    scoreCard.setAttribute("hidden", true);
+    leaderboardCard.setAttribute("hidden", true);
+}
