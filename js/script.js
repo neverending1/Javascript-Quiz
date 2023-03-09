@@ -37,5 +37,9 @@ const questions = [
       options: ["1. alertBox('Hello World!');", "2. alert('Hello World!');", "3. alert(Text:'Hello World!');", "4. Both 1. and 2."],
       answer: "2. alert('Hello World!');",
     },
-  ];
-  
+];
+
+const startCard = document.querySelector("#start-card");
+const questionCard = document.querySelector("#question-card");
+const scoreCard = document.querySelector("#score-card");
+const leaderboardCard = document.querySelector("#leaderboard-card");
