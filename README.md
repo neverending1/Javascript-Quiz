@@ -33,3 +33,5 @@ The following images demonstrates the application functionality:
 ![img3](./Assets/images/3.png)
 ![img4](./Assets/images/4.png)
 
+## Deployed site
+https://neverending1.github.io/Javascript-Quiz/
